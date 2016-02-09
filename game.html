@@ -4,18 +4,35 @@
 		<meta charset="UTF-8">
 		<title>Projeto Final de Redes - 2015.2</title>
 		<link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
-	    <link rel="stylesheet" type="text/css" href="../squareShift/css/index.css">
+	    <link rel="stylesheet" type="text/css" href="../squareShift/css/game.css">
 	</head>
 
 	<body>
 
 		<div class="header">
 			<div class="container">
-				<h1>Trabalho Final de Redes</h1>
-				<p>Sistemas e Mídias Digitais - UFC</p>
-				<a class="btn" href="game.html">Start Game</a>
+				<a class="btn" href="index.html">Inicio</a>
 			</div>
+			<canvas id="myCanvas" width="1200" height="530" style="border:5px solid #000000;"></canvas>
 		</div>
+
+		<script>
+			var c = document.getElementById("myCanvas");
+			var ctx = c.getContext("2d");
+			var canvasData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+
+			canvasData {
+			    width: unsigned long, // the width of the canvas
+			    height: unsigned long, // the height of the canvas
+			    data: CanvasPixelArray // the values of the pixels
+			}
+
+			var x = 10;
+			var y = 10;
+			var blue = canvasData.data[(y * width + x) * 4 + 2];
+
+
+		</script>
 
 		<div class="infos">
 			<div class="container">
